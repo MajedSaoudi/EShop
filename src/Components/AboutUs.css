@@ -1,0 +1,74 @@
+.AboutUs{
+    width: 100vw;
+    background-color: #F2F2F2;
+}
+.space{
+    height: 65px;
+}
+.AboutUs-header{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    height: 30vh;
+    width: 100vw;
+    filter: contrast(1.1);
+    background-image: url('../Assets/Images/inner_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 25px;
+}
+.AboutUs-header h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+.AboutUS-Container{
+    margin: auto;
+    max-width: 1300px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.About-par{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    margin-bottom: 25px;
+}
+
+.About-par h1{ 
+    
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.About-par p{
+    text-wrap: pretty;
+    font-size: 20px;
+    line-height: 40px;
+    color: #7a7878;
+}
+
+@media screen and (max-width: 700px) {
+    .AboutUs-header h1{
+        font-size: 35px;
+    }
+    .About-par h1{
+        font-size: 35px;
+    }
+    .About-par p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .About-par h1{
+        font-size: 28px;
+    }
+    .About-par p{
+        font-size: 15px;
+    }
+}

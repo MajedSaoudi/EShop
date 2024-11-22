@@ -1,0 +1,197 @@
+.Shop{
+    display: flex;
+    min-height: 100vh;
+    background-color: #F2F2F2;
+    width: 100vw;
+}
+
+.Shop-Container{
+    margin: 10% auto;
+    width: 1300px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.Shop-container div{
+    width: 65%;
+}
+.text-header{
+    width: 100%;
+    text-align: center;
+}
+
+.text-header h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.text-header p{
+    font-size: 20px;
+    padding: 10px;
+}
+.Products-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    animation: fade-up 0.8s;
+}
+.filter{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.filter button{
+    padding: 10px;
+    font-size: 15px;
+    margin:5px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(192, 192, 192);
+
+}
+
+.filter button:hover{
+    background-color: #0077ED;
+    cursor: pointer;
+    color: white;
+}
+
+.active{
+    opacity: 0.7;
+}
+.filter button:active, .filter button:focus{
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+}
+
+
+
+.product-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.product-image img:hover{
+   transform: scale(1.05);
+   transition: ease 0.5s;
+   cursor: pointer;
+}
+
+.Product{
+    padding: 25px 25px;
+    width: 280px;
+    height: 370px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    
+}
+.product-price{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Product h1{
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.Product b{
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    
+}
+.path{
+    display: flex;
+    max-width: 1300px;
+    height: 50px;
+    align-items: center;
+    background-color: white;
+    border: 1px  #ddd;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+.path ul{
+    list-style: none;
+    padding: 15px;
+}
+.path li{
+    display: inline;
+    font-size: 20px;
+}
+.path li a{
+    text-decoration: none;
+    color:#0077ED;
+}
+.path li a:hover{
+    text-decoration: underline;
+}
+.Product img{
+    height: 200px;
+    max-width: 310px;
+}
+.Buy-btn{
+    background-color: rgb(0, 113, 227);
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 999px;
+    font-family: 'Instrument Sans';
+    border: none;
+    margin-top: 15px;
+    color: white;
+}
+.Learn-btn{
+    font-family: 'Instrument Sans';
+    background-color: #fffcf9;
+    padding: 15px;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 999px;
+    margin-top: 25px;
+}
+.info-container p{
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.Buy-btn:hover{
+    cursor: pointer;
+    background-color: #0077ED;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Learn-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.info-container{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 660px) {
+    .text-header h1{
+        font-size: 36px;
+        margin-top: 25px;
+    }
+    .text-header p{
+        font-size: 18px;
+    }
+    .filter button{
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+

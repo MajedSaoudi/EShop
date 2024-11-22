@@ -1,0 +1,149 @@
+.Contact-content{
+    text-align: center;
+}
+
+.Contact-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.Contact-content p{
+    font-size: 20px;
+}
+
+.Form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.Contact-form{
+    padding: 25px;
+    background-color: white;
+    border-radius: 25px;
+    width: 700px;
+    max-width: 70%;
+    margin-bottom:30px;
+    border: 1px #ddd;
+}
+
+.Contact-form h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+
+
+.name-field{
+
+    width: 100%;
+}
+.Contact-form p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Contact-form input[type="text"]{
+    font-size: 17px;
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ded4d4;
+}
+
+
+.Contact-form input[type="email"]{
+    font-size: 17px;
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ded4d4;
+}
+
+.Contact-form textarea{
+    font-size: 17px;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ded4d4;
+}
+.submit-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn button{
+    background-color: rgb(0, 113, 227);
+    padding: 15px 25px;
+    border-radius: 999px;
+    font-family: 'Instrument Sans';
+    border: none;
+    color: white;
+}
+
+.submit-btn button:hover{
+    cursor: pointer;
+    background-color: #0077ED;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .Contact-content p{
+        font-size: 16px;
+    }
+    .Contact-content h1{
+        font-size: 28px;
+    }
+    .Contact-form h1{
+        font-size: 18px;
+    }
+    .Contact-form p{
+        font-size: 17px;
+    }
+    .Contact-form input[type="text"]{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .Contact-form input[type="email"]{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .Contact-form textarea{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Contact-content p{
+        font-size: 14px;
+    }
+    .Contact-content h1{
+        font-size: 26px;
+    }
+    .Contact-form h1{
+        font-size: 16px;
+    }
+    .Contact-form p{
+        font-size: 15px;
+    }
+    .Contact-form input[type="text"]{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .Contact-form input[type="email"]{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .Contact-form textarea{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
