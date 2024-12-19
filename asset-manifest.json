@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EShop/static/css/main.c6533607.css",
-    "main.js": "/EShop/static/js/main.6b11127f.js",
+    "main.css": "/EShop/static/css/main.17eedba7.css",
+    "main.js": "/EShop/static/js/main.48a9bbd3.js",
     "static/media/iphone11 pro max.png": "/EShop/static/media/iphone11 pro max.0552dd9af2301f5076a9.png",
     "static/media/bck.png": "/EShop/static/media/bck.6d7fdfa09c1783172201.png",
     "static/media/iphone16pro.png": "/EShop/static/media/iphone16pro.ff416724dfa3a0d9be86.png",
@@ -28,17 +28,18 @@
     "static/media/category iphone.png": "/EShop/static/media/category iphone.3bef7f6d18080b885e6d.png",
     "static/media/categorymac.png": "/EShop/static/media/categorymac.06ca818671ac2dcf69b6.png",
     "static/media/WhatsApp_icon.png": "/EShop/static/media/WhatsApp_icon.31d4b1d27126bcc1f665.png",
+    "static/media/Search.png": "/EShop/static/media/Search.dc13bd39763f38947a99.png",
     "static/media/flame.png": "/EShop/static/media/flame.25e7c696684de7069e60.png",
     "static/media/Burger.png": "/EShop/static/media/Burger.745580e91f9a46765063.png",
     "static/media/applewatch.png": "/EShop/static/media/applewatch.cec7e91cbca327b191fd.png",
     "static/media/New.png": "/EShop/static/media/New.5aa97ce3a72b1886ebf5.png",
     "static/media/M4macbook.avif": "/EShop/static/media/M4macbook.93edfc17ac5ff756db41.avif",
     "index.html": "/EShop/index.html",
-    "main.c6533607.css.map": "/EShop/static/css/main.c6533607.css.map",
-    "main.6b11127f.js.map": "/EShop/static/js/main.6b11127f.js.map"
+    "main.17eedba7.css.map": "/EShop/static/css/main.17eedba7.css.map",
+    "main.48a9bbd3.js.map": "/EShop/static/js/main.48a9bbd3.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6533607.css",
-    "static/js/main.6b11127f.js"
+    "static/css/main.17eedba7.css",
+    "static/js/main.48a9bbd3.js"
   ]
 }
