@@ -98,6 +98,9 @@
     .product-container{
         gap: 30px;
     }
+    .Search-box{
+        width: 80%;
+    }
     .Product-Container img{
         max-height: 350px;
         max-width: 350px;

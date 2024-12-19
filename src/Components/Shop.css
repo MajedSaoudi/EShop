@@ -194,4 +194,34 @@
     }
 }
 
+.Search-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+     margin-bottom: 20px;
+}
+.Search-tab img{ 
+    height: 33px;
+}
+.Search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 50%;
+}
+.Search-tab input{
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    max-width: 600px;
+    border: none;
+    border-radius: 25px;
+}
+.Search-tab input:focus{
+    border: none;
+    outline: none;
+}
+
 

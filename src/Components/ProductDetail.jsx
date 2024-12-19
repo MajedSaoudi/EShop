@@ -11,21 +11,21 @@ function ProductDetail  (){
 
     const { id } = useParams();
   
-    // Find the product that matches the ID from the URL
+   
     const product = products.find((product) => product.id === parseInt(id));
   
-    // If no product is found, display a message
+
     if (!product) {
       return <h2>Product not found</h2>;
     }
 
   return (
+    <div>
+      <header id="Header">
+            <Header />
+           </header>
   <div id='ProductDetail' className='ProductDetail'>
 
-
-    <header>
-        <Header />
-    </header>
     
     <div className='Product-Container'>
     <div className='btn-container'>
@@ -46,6 +46,7 @@ function ProductDetail  (){
     </div>
     </div>
     
+    </div>
     </div>
   );
 };

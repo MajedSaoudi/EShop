@@ -8,7 +8,7 @@ import watchs2 from '../Assets/Images/WatchSeries2.png';
 import macbookair from '../Assets/Images/macbookair.png';
 import flame from '../Assets/Images/flame.png';
 import Ipromax from '../Assets/Images/16promax.png';
-
+import Search from '../Assets/Images/Search.png';
 import iphone from '../Assets/Images/Iphone.png';
 import iphone11 from '../Assets/Images/iphone11 pro max.png';
 import ipad24 from '../Assets/Images/IpadPro2024.png';
@@ -125,12 +125,13 @@ function Shop() {
 
 
   const [filter, setFilter] = useState('ALL');
+  const [search, setSearch] = useState('');
 
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    // Get filter from query parameters
+  
     const category = searchParams.get("filter");
     if (category) {
       setFilter(category);
@@ -138,13 +139,10 @@ function Shop() {
   }, [searchParams]);
 
 
-  // Filter products based on the selected category
-  const filteredProducts = filter === 'ALL'
-    ? products
-    : products.filter(product => product.category === filter);
-
-   
-
+ 
+  const filteredAndSearchedProducts = products
+  .filter(product => filter === 'ALL' || product.category === filter) 
+  .filter(product => search === '' || product.name.trim().toLowerCase().replace(/\s+/g, '').includes(search.trim().toLowerCase().replace(/\s+/g, ''))); 
     
   return (
     <div className='Shop' id='Shop'>
@@ -167,6 +165,12 @@ function Shop() {
             </li>
           </ul>
         </div>
+        <div className='Search-tab'>
+          <div className='Search-box'>
+          <img src={Search} alt='Search-icon'/>
+          <input onChange={(e)=> setSearch(e.target.value)} value={search}/>
+          </div>
+        </div>
         <div className='filter'>
           <button onClick={() => setFilter('ALL')} style={filter === 'ALL' ? { opacity: 0.7, backgroundColor: 'black', color: 'white' } : {}}>ALL</button>
           <button onClick={() => setFilter('iPhone')}  style={filter === 'iPhone' ? { opacity: 0.7, backgroundColor: 'black', color: 'white' } : {}}>Iphone</button>
@@ -176,9 +180,9 @@ function Shop() {
           <button onClick={() => setFilter('Airpod')} style={filter === 'Airpod' ? { opacity: 0.7, backgroundColor: 'black', color: 'white' } : {}}>Airpod</button>
         </div>
         <div className='Products-container'>
-          {filteredProducts.length > 0  ? (
+          {filteredAndSearchedProducts.length > 0  ? (
             <>
-              {filteredProducts.map(product => (
+              {filteredAndSearchedProducts.map(product => (
                 <div key={product.id} className={`Product ${product.category}`} >
                   {product.iconimg && (
                   <div className='topright' > <img src={product.iconimg} alt="" /></div> 
