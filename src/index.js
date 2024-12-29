@@ -6,8 +6,8 @@ import Shop from './Components/Shop.jsx';
 import AboutUs from './Components/AboutUs.jsx';
 import ContactUs from './Components/ContactUs.jsx';
 import ProductDetail from './Components/ProductDetail.jsx';
-
-
+import { CartProvider } from './Components/CartContext.jsx';
+import Layout from './Components/Layout.jsx';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -16,29 +16,51 @@ import {
   const router = createBrowserRouter([
     {
       path: "/EShop",
-      element: <App />,
+      element: (
+        <Layout>
+          <App />
+        </Layout>
+      ),
     },
     {
-        path:'/Shop',
-        element: <Shop />
+      path: '/Shop',
+      element: (
+        <Layout>
+          <Shop />
+        </Layout>
+      )
     },
     {
       path: "/product/:id",
-      element: <ProductDetail />, 
+      element: (
+        <Layout>
+          <ProductDetail />
+        </Layout>
+      )
     },
     {
-      path:'/AboutUs',
-      element: <AboutUs />
+      path: '/AboutUs',
+      element: (
+        <Layout>
+          <AboutUs />
+        </Layout>
+      )
     },
     {
-      path:'/ContactUs',
-      element: <ContactUs />
+      path: '/ContactUs',
+      element: (
+        <Layout>
+          <ContactUs />
+        </Layout>
+      )
     },
-])
+  ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <CartProvider>
   <RouterProvider router={router} basename='/EShop'/>
+  </CartProvider> 
    
   
 );

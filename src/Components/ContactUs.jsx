@@ -13,9 +13,7 @@ function ContactUs() {
 },[]);
   return (
     <div className='AboutUs'>
-          <header id="Header">
-            <Header />
-           </header>
+   
            <div className='space'> </div>
           <div className='AboutUs-header' >
           <div data-aos="fade-right">
@@ -64,7 +62,7 @@ function ContactUs() {
         </form>
         </div>
         </div>
-        <Footer />
+   
         </div>
   )
 }

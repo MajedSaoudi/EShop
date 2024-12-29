@@ -16,9 +16,7 @@ function AboutUs() {
 
        
     <div className='AboutUs'>
-           <header id="Header">
-            <Header />
-           </header>
+       
            <div className='space'> </div>
           <div className='AboutUs-header' >
           <div data-aos="fade-right">
@@ -46,7 +44,7 @@ function AboutUs() {
 Let us be a part of your journey into the world of innovation. Welcome to E-Shop, where Apple meets excellence!</p>
         </div>
     </div>
-    <Footer />
+ 
     </div>
   )
 }

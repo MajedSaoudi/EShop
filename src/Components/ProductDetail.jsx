@@ -4,10 +4,11 @@ import Header from './Header';
 import { useParams } from 'react-router-dom';
 import { products } from './Shop';
 import { Link } from 'react-router-dom';
+import { useCart } from './CartContext';
 
 function ProductDetail  (){
 
-
+  const { addToCart } = useCart();
 
     const { id } = useParams();
   
@@ -21,9 +22,7 @@ function ProductDetail  (){
 
   return (
     <div>
-      <header id="Header">
-            <Header />
-           </header>
+     
   <div id='ProductDetail' className='ProductDetail'>
 
     
@@ -41,7 +40,9 @@ function ProductDetail  (){
       <b>specs: </b><br /> <p>{product.specs}</p><br/>
       </div>
       <b>Price: {product.price}</b> <br />
-      <button className='Buy-btn'>Buy Now</button>
+      <button className='Buy-btn' onClick={() => addToCart(product)}>
+        Add To Cart
+     </button>
     </div>
     </div>
     </div>

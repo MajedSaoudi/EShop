@@ -146,9 +146,7 @@ function Shop() {
     
   return (
     <div className='Shop' id='Shop'>
-      <header>
-        <Header />
-      </header>
+
       <div className='Shop-Container'>
         <div className='text-header'>
           <h1>Our Products</h1>

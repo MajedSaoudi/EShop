@@ -81,12 +81,12 @@ useEffect(() => {
   const panels = gsap.utils.toArray(".Home-section14, .Home-section12, .Home-section11");
 
   panels.forEach((panel) => {
-    // Set up ScrollTrigger for each section
+    
     ScrollTrigger.create({
       trigger: panel,
-      start: "top top", // Trigger starts when the section reaches the top
-      pin: true,        // Pin the section while scrolling
-      pinSpacing: false // Remove spacing between sections
+      start: "top top", 
+      pin: true,       
+      pinSpacing: false 
     });
   });
 }, comp);
@@ -112,9 +112,7 @@ useEffect(() => {
         </div>
       </div>
     <div id='Home'>
-    <header id="Header">
-          <Header/>
-      </header>
+  
       <div className='adds-container'>
         <div className='adds' data-aos="fade-right">
           <a href="https://facebook.com/" target='_black'><img src={facebookpng} alt="" /></a>
