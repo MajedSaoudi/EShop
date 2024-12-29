@@ -33,9 +33,9 @@ import {
     {
       path: "/product/:id",
       element: (
-        <Layout>
+    
           <ProductDetail />
-        </Layout>
+       
       )
     },
     {

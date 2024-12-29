@@ -24,7 +24,9 @@ function ProductDetail  (){
     <div>
      
   <div id='ProductDetail' className='ProductDetail'>
-
+     <div>
+      <Header />
+     </div>
     
     <div className='Product-Container'>
     <div className='btn-container'>
