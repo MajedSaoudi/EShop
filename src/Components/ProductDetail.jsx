@@ -5,13 +5,13 @@ import { useParams } from 'react-router-dom';
 import { products } from './Shop';
 import { Link } from 'react-router-dom';
 import { useCart } from './CartContext';
-
+import toast, { Toaster } from 'react-hot-toast';
 function ProductDetail  (){
 
   const { addToCart } = useCart();
 
     const { id } = useParams();
-  
+    const notify = () => toast.success('Successfully Added!');
    
     const product = products.find((product) => product.id === parseInt(id));
   
@@ -42,9 +42,13 @@ function ProductDetail  (){
       <b>specs: </b><br /> <p>{product.specs}</p><br/>
       </div>
       <b>Price: {product.price}</b> <br />
-      <button className='Buy-btn' onClick={() => addToCart(product)}>
+      <button className='Buy-btn' onClick={() => {
+        addToCart(product);
+        notify()
+        }}>
         Add To Cart
      </button>
+     <Toaster />
     </div>
     </div>
     </div>
