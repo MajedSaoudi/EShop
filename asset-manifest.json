@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EShop/static/css/main.c866410b.css",
-    "main.js": "/EShop/static/js/main.edf66fb1.js",
+    "main.js": "/EShop/static/js/main.c48b3a98.js",
     "static/media/iphone11 pro max.png": "/EShop/static/media/iphone11 pro max.0552dd9af2301f5076a9.png",
     "static/media/bck.png": "/EShop/static/media/bck.6d7fdfa09c1783172201.png",
     "static/media/iphone16pro.png": "/EShop/static/media/iphone16pro.ff416724dfa3a0d9be86.png",
@@ -36,10 +36,10 @@
     "static/media/M4macbook.avif": "/EShop/static/media/M4macbook.93edfc17ac5ff756db41.avif",
     "index.html": "/EShop/index.html",
     "main.c866410b.css.map": "/EShop/static/css/main.c866410b.css.map",
-    "main.edf66fb1.js.map": "/EShop/static/js/main.edf66fb1.js.map"
+    "main.c48b3a98.js.map": "/EShop/static/js/main.c48b3a98.js.map"
   },
   "entrypoints": [
     "static/css/main.c866410b.css",
-    "static/js/main.edf66fb1.js"
+    "static/js/main.c48b3a98.js"
   ]
 }
