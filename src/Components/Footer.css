@@ -1,7 +1,7 @@
 .Footer{
     min-height: 25vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     justify-content: center;

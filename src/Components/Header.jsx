@@ -43,7 +43,7 @@ function Header() {
               <button><Link to="/Shop">Shop</Link></button>
               <div className='cart-container' onClick={handleLinkClick}>
                 <a className='cart' onClick={() => {setIsOpen(false);
-              setChartIsOpen(true)
+              setChartIsOpen(!chartisOpen)
             }}>
                   <img src={cart} alt="Cart Icon" />
                   <p className='cart-num'>{cartCount}</p>
