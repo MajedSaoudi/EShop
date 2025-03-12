@@ -47,8 +47,9 @@
 }
 
 .About-par p{
+    font-family: 'afacad';
     text-wrap: pretty;
-    font-size: 20px;
+    font-size: 35px;
     line-height: 40px;
     color: #7a7878;
 }
@@ -61,7 +62,7 @@
         font-size: 35px;
     }
     .About-par p{
-        font-size: 17px;
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 550px) {
@@ -69,6 +70,6 @@
         font-size: 28px;
     }
     .About-par p{
-        font-size: 15px;
+        font-size: 20px;
     }
 }

@@ -8,6 +8,7 @@ import ContactUs from './Components/ContactUs.jsx';
 import ProductDetail from './Components/ProductDetail.jsx';
 import { CartProvider } from './Components/CartContext.jsx';
 import Layout from './Components/Layout.jsx';
+import ScrollToTop from './Components/ScrollTotop.jsx';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -18,6 +19,7 @@ import {
       path: "/EShop",
       element: (
         <Layout>
+          <ScrollToTop />
           <App />
         </Layout>
       ),
@@ -26,6 +28,7 @@ import {
       path: '/Shop',
       element: (
         <Layout>
+          <ScrollToTop />
           <Shop />
         </Layout>
       )
@@ -33,15 +36,17 @@ import {
     {
       path: "/product/:id",
       element: (
-    
+        <Layout>
+          <ScrollToTop />
           <ProductDetail />
-       
+        </Layout>
       )
     },
     {
       path: '/AboutUs',
       element: (
         <Layout>
+          <ScrollToTop />
           <AboutUs />
         </Layout>
       )
@@ -50,6 +55,7 @@ import {
       path: '/ContactUs',
       element: (
         <Layout>
+          <ScrollToTop />
           <ContactUs />
         </Layout>
       )

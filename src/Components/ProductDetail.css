@@ -2,6 +2,7 @@
     display: flex;
     min-height: 100vh;
     width: 100vw;
+    
 }
 
 
@@ -11,7 +12,7 @@
      border-radius: 10px;
      border: none;
      background-color: rgb(192, 192, 192);
-     margin-bottom: 25px;
+     margin-top: 40px;
      }
 
 .back-btn:hover{
@@ -156,7 +157,7 @@
 
     .back-btn{
         margin-bottom: 15px;
-        margin-top: 16%;
+        margin-top: 70px;
     }
 }
 

@@ -16,12 +16,29 @@ export const CartProvider = ({ children }) => {
  
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    setCartCount(cartItems.length);
   }, [cartItems]);
 
-  const addToCart = (product) => {
-    setCartItems((prev) => [...prev, product]);
-    setCartCount((prev) => prev + 1);
-  };
+ function addToCart(Product, amount) {
+   
+    setCartItems((prev) => {
+      const existingProductIndex = prev.findIndex((item) => item.id === Product.id);
+
+      if (existingProductIndex !== -1) {
+        const updatedCart = [...prev];
+        updatedCart[existingProductIndex] = {
+          ...updatedCart[existingProductIndex],
+          amount: updatedCart[existingProductIndex].amount + amount,
+          
+        };
+        return updatedCart;
+        
+      } else {
+        return [...prev, { ...Product, amount }];
+   
+      }
+    });
+  }
 
   const removeFromCart = (productId) => {
     const updatedCart = cartItems.filter((item) => item.id !== productId);

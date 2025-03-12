@@ -28,7 +28,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 export const products = [{ id: 0, name: 'iPhone 16 Pro Max', category: 'iPhone', price: '999$',iconimg:New,  image:Ipromax, specs: `• Display: LTPO Super Retina XDR OLED, 120Hz.
   • Processor: Apple A18 Pro (3 nm).
   • RAM: 8GB.
-  • Storage: 256GB.` },
+  • Storage: 256GB.`, checkout:'https://buy.stripe.com/test_7sI9Ei2AZ7722oEaEG', checkout:'https://buy.stripe.com/test_7sI9Ei2AZ7722oEaEG' },
 { id: 1, name: 'M4 Macbook Pro', category: 'Macbook', price: '1999$',iconimg:New,  image:m4macbook, specs: `• Display: 14.2-inch (3024 x 1964) 120Hz.
     • Processor: Apple M4.
     • RAM: 16GB LPDDR5
@@ -37,7 +37,7 @@ export const products = [{ id: 0, name: 'iPhone 16 Pro Max', category: 'iPhone',
       • Processor: Apple A14 Bionic 
       • RAM: 4GB 
       • Storage: 64GB
-      • Camera: 12 MP` },
+      • Camera: 12 MP`, checkout:'https://buy.stripe.com/test_7sI9Ei2AZ7722oEaEG' },
 { id: 3, name: 'iPhone 16 Pro', category: 'iPhone', price: '900$',oldprice:'1099$' ,image: iphone16pro, specs: `• Display: 6.1-inch (2532 x 1170) Super Retina XDR OLED.
         • Processor: Apple A16 Bionic 
         • RAM: 6GB

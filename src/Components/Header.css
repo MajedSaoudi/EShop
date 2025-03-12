@@ -139,6 +139,10 @@
   border-radius: 5px;
   margin-left: 25px;
 }
+.Checkout-btn a{
+  text-decoration: none;
+  color: white;
+}
 .Checkout-btn:hover{
   cursor: pointer;
   background-color: #0077ED;
@@ -215,9 +219,9 @@
 }
 .cart-num{
   position: absolute;
-  color: #878384 !important;
+  color: white !important;
   bottom: 0px;
-  right: -5px;
+  right: 5px;
 }
 .cart img{
   width: 30px;

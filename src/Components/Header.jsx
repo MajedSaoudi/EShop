@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from './CartContext';
 import burger from '../Assets/Images/Burger.png';
 import close from '../Assets/Images/close.png';
-import cart from '../Assets/Images/cart.png';
+import cart from '../Assets/Images/Cart.svg';
 import './Header.css';
 
 function Header() {
@@ -27,7 +27,9 @@ function Header() {
             </a>
           </div>
           <div className='Categories'>
-            <div className="checkbtn" onClick={() => setIsOpen(!isOpen)}>
+            <div className="checkbtn" onClick={() => {setIsOpen(!isOpen);
+              setChartIsOpen(false)
+            }}>
               <img src={isOpen ? close : burger} alt="Menu" className='menu-icon' />
             </div>
             <div className={`menu ${isOpen ? 'show' : ''}`}>
@@ -40,7 +42,9 @@ function Header() {
               <Link to="/ContactUs"><p>Contact</p></Link>
               <button><Link to="/Shop">Shop</Link></button>
               <div className='cart-container' onClick={handleLinkClick}>
-                <a className='cart' onClick={() => setChartIsOpen(!chartisOpen)}>
+                <a className='cart' onClick={() => {setIsOpen(false);
+              setChartIsOpen(true)
+            }}>
                   <img src={cart} alt="Cart Icon" />
                   <p className='cart-num'>{cartCount}</p>
                 </a>
@@ -76,7 +80,7 @@ function Header() {
         </div>
         </div>
         <button className='close-btn' onClick={() => setChartIsOpen(false)}>Close</button>
-        <button className='Checkout-btn'>Checkout</button>
+        <button className='Checkout-btn'><a href='https://buy.stripe.com/test_7sI9Ei2AZ7722oEaEG'>Checkout</a></button>
         </div>
       
     </>
