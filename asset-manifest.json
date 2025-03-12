@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/EShop/static/css/main.c866410b.css",
-    "main.js": "/EShop/static/js/main.c48b3a98.js",
-    "static/media/iphone11 pro max.png": "/EShop/static/media/iphone11 pro max.0552dd9af2301f5076a9.png",
-    "static/media/bck.png": "/EShop/static/media/bck.6d7fdfa09c1783172201.png",
-    "static/media/iphone16pro.png": "/EShop/static/media/iphone16pro.ff416724dfa3a0d9be86.png",
-    "static/media/m2macbookair.png": "/EShop/static/media/m2macbookair.e2ac0b22ee8c5db1b6c2.png",
-    "static/media/iphone12pro.png": "/EShop/static/media/iphone12pro.4d6bd10ed9f260142921.png",
+    "main.css": "/EShop/static/css/main.74297ae1.css",
+    "main.js": "/EShop/static/js/main.0669bf43.js",
+    "static/media/bck.png": "/EShop/static/media/bck.eb90ad5cdbb2ac607acc.png",
     "static/media/close.png": "/EShop/static/media/close.33781b6fe98d1fcb3fac.png",
+    "static/media/iphone11 pro max.png": "/EShop/static/media/iphone11 pro max.1b14e608447ba5cf1927.png",
     "static/media/iphone11.png": "/EShop/static/media/iphone11.474df77bca820030cc9e.png",
-    "static/media/iphone12.png": "/EShop/static/media/iphone12.bfba6667c4e188da3a37.png",
+    "static/media/iphone16pro.png": "/EShop/static/media/iphone16pro.649f3080c1e53f6b1911.png",
     "static/media/macbookair.png": "/EShop/static/media/macbookair.81ce572579886a4a752e.png",
     "static/media/iphone16.png": "/EShop/static/media/iphone16.2a61a7d3bd261c6d5800.png",
     "static/media/IpadPro2024.png": "/EShop/static/media/IpadPro2024.85dc298b2511dd444441.png",
     "static/media/m3macbookair.png": "/EShop/static/media/m3macbookair.48ae40934a564bc407c9.png",
-    "static/media/inner_header.jpg": "/EShop/static/media/inner_header.cd806d8295e54973ad07.jpg",
     "static/media/instagram.png": "/EShop/static/media/instagram.da61275da83501aa7a6f.png",
+    "static/media/m2macbookair.png": "/EShop/static/media/m2macbookair.6f9617f9f94ad07dd9ba.png",
     "static/media/WatchSeries2.png": "/EShop/static/media/WatchSeries2.b0f42f47cb8c5c94c022.png",
     "static/media/airpods3.png": "/EShop/static/media/airpods3.3ccb94e94c856a284dde.png",
     "static/media/homebak.jpg": "/EShop/static/media/homebak.b564af5f4ffd7d2efc77.jpg",
+    "static/media/iphone12.png": "/EShop/static/media/iphone12.bf884df9cfeb0b67e8ea.png",
     "static/media/13promax.png": "/EShop/static/media/13promax.1136efc439532569dad3.png",
     "static/media/Iphone.png": "/EShop/static/media/Iphone.a6aba0ed6d121fcd9db7.png",
+    "static/media/iphone12pro.png": "/EShop/static/media/iphone12pro.1bda9a15a882bbb7cff7.png",
     "static/media/iphone13.png": "/EShop/static/media/iphone13.beed0882720554940d04.png",
     "static/media/ipad.png": "/EShop/static/media/ipad.688d9399f55e9286b63c.png",
     "static/media/16promax.png": "/EShop/static/media/16promax.e8ffdb17f22dab1df53d.png",
@@ -28,6 +27,7 @@
     "static/media/category iphone.png": "/EShop/static/media/category iphone.3bef7f6d18080b885e6d.png",
     "static/media/categorymac.png": "/EShop/static/media/categorymac.06ca818671ac2dcf69b6.png",
     "static/media/WhatsApp_icon.png": "/EShop/static/media/WhatsApp_icon.31d4b1d27126bcc1f665.png",
+    "static/media/inner_header.jpg": "/EShop/static/media/inner_header.8608dfdfcaaf9806f07e.jpg",
     "static/media/Search.png": "/EShop/static/media/Search.dc13bd39763f38947a99.png",
     "static/media/flame.png": "/EShop/static/media/flame.25e7c696684de7069e60.png",
     "static/media/Burger.png": "/EShop/static/media/Burger.745580e91f9a46765063.png",
@@ -35,11 +35,12 @@
     "static/media/New.png": "/EShop/static/media/New.5aa97ce3a72b1886ebf5.png",
     "static/media/M4macbook.avif": "/EShop/static/media/M4macbook.93edfc17ac5ff756db41.avif",
     "index.html": "/EShop/index.html",
-    "main.c866410b.css.map": "/EShop/static/css/main.c866410b.css.map",
-    "main.c48b3a98.js.map": "/EShop/static/js/main.c48b3a98.js.map"
+    "static/media/Cart.svg": "/EShop/static/media/Cart.9f7c7ab6909733a50a2f3e7fb28e448b.svg",
+    "main.74297ae1.css.map": "/EShop/static/css/main.74297ae1.css.map",
+    "main.0669bf43.js.map": "/EShop/static/js/main.0669bf43.js.map"
   },
   "entrypoints": [
-    "static/css/main.c866410b.css",
-    "static/js/main.c48b3a98.js"
+    "static/css/main.74297ae1.css",
+    "static/js/main.0669bf43.js"
   ]
 }
